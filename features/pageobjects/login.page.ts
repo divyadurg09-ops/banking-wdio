@@ -30,6 +30,11 @@ class LoginPage extends Page {
         await this.btnSubmit.click();
     }
 
+    async clearUsername() {
+   await this.inputUsername.clearValue()
+}
+
+
     /**
      * overwrite specific options to adapt it to page object
      */
@@ -39,3 +44,4 @@ class LoginPage extends Page {
 }
 
 export default new LoginPage();
+
